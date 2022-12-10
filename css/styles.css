@@ -24,7 +24,7 @@ color: var(--primary-color);
     margin: 0 auto;
     box-sizing: border-box;
     align-items: center;
-     outline: solid tomato;  
+     /* outline: solid tomato;   */
 }
 .section{
     padding-top: 120px;
@@ -65,8 +65,6 @@ text-decoration: none;
 .navigation-link{
      padding-top: 24px;
     padding-bottom: 24px;
-
-    margin-left: 100px;
     margin-right: 67px;
     font-family: 'Raleway';
     font-weight: 800;
@@ -104,14 +102,11 @@ text-decoration: none;
 .linkm:not(first-child){
     margin-left: 40px;
 }
-.mail>.linkm:last-child{
-    margin-right: 140px;
-}
 .mail-link:hover, .mail-link:focus{
     color: var(--brand-color);
 }
 /* main */
-.container.primary{
+.primary{
     background-color: var(--primary-color);
     padding-top: 192px;
     padding-bottom: 192px;
@@ -153,12 +148,7 @@ line-height: 1.18;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .ability{
-    text-align: center;
-   
-     padding-left: 156px;
-     padding-right: 156px;
-
-}
+   padding-top: 120px;}
 .abilities{
     display: flex;
     
@@ -176,7 +166,6 @@ letter-spacing: 0.02em;
 }
 .abilities.paragraph{
   margin-right: var(--main-margin);
-    width: 264px;
     color:var(--secondary-color);
     font-size: 16px;
     line-height: 1.5;
@@ -232,9 +221,12 @@ letter-spacing: 0.02em;
 .our-team{
     background-color: var(--light-color);
 }
+.dispimg{
+    display: block;
+}
+
 .team{
     background-color: var(--background-color);
-    display: block;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -256,11 +248,10 @@ padding-bottom: 32px;
     display: flex;
 }
 /* footer */
-.container.end{
+.end{
     background-color: var(--primary-color);
   padding-top: 100px;
 padding-bottom: 100px;
-padding-left: 156px;
 }
 
 .logo{
@@ -323,7 +314,7 @@ border-radius: 4px;
     background-color: var(--brand-color);
 }
 .list-header{
-    padding-bottom: 8px;
+  margin-bottom: 8px;
     color: var(--primary-color);
     font-weight: 500;
 font-size: 20px;
@@ -345,19 +336,18 @@ letter-spacing: 0.02em;
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -24px;
-margin-top: -48px;
+   row-gap: 48px;
+   column-gap: 24px;
 }
 .portfolio-set{
     padding-left: 16px;
     padding-top: 32px;
     padding-bottom: 32px;
+    border: 0.5px solid #F4F4FD;
 }
 .portfolio{
-    flex-basis: calc(100%/3-24px);
-    border: 0.5px solid #F4F4FD;
+    flex-basis: calc((100%/2*24px)-3);
+   
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 width: 360px;
-margin-left: 24px;
-margin-top: 48px;
 }
